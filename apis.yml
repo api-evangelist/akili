@@ -1,23 +1,60 @@
 aid: akili
+
 name: Akili
-description: 'Akili is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: http://static1.squarespace.com/static/5a0457fa18b27dc7e8aef79b/t/5be303a303ce646801a1e90b/1541604261020/og-share.jpg?format=1500w
+
+description: 'Akili creates digital medicines delivered as video game experiences for people with cognitive impairments. It offers EndeavorOTC™, a game‑based treatment for adults with ADHD, and EndeavorRx®, an FDA‑authorized prescription video game for children with ADHD. The products are available through app stores and require a prescription for use.'
+
 url: https://raw.githubusercontent.com/api-evangelist/akili/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- digital medicine
+- ADHD
+- cognitive impairment
+- neuroscience
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/akili-hosts.yml
+- type: Vendors
+  url: vendors/akili-vendors.yml
+- type: TermsOfService
+  url: https://www.akiliinteractive.com/terms-of-use
+- type: Sandbox
+  url: https://www.akiliinteractive.com/console
+- type: PrivacyPolicy
+  url: https://www.akiliinteractive.com/privacy-notice
+- type: Newsroom
+  url: https://www.akiliinteractive.com/news
+- type: DomainSecurity
+  url: security/akili-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/akili_stock/
+  url: https://www.akiliinteractive.com/
+
+apis: []
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
