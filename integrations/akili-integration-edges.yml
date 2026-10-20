@@ -1,0 +1,46 @@
+edges:
+- partner_name: FDA digital therapeutics (510(k) / De Novo)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K233496
+  category: FDA-authorized digital therapeutic
+  contract_reference:
+    register: openFDA device/510k (DTx product codes PWE QFT QMY QMZ QQU QRA QVO QWI QXC SAP SBN SCP SEE)
+    standard: FDA 510(k) / De Novo digital therapeutic
+    spec_file: null
+    role: fda-dtx-holder
+    registered_name: Akili Interactive Labs, Inc.
+    matched_domain: null
+    matched_by: domain+verified
+    domain_source: hand-verified (LOCAL_VERIFIED)
+    detected_by: sweep-digital-therapeutics.py
+    detected: '2026-10-20'
+    verified_note: Akili Interactive Labs = Akili (akiliinteractive.com, held by the repo); EndeavorRx / EndeavorOTC
+      (hand review 2026-10-20)
+    register_id: K233496
+    certified_products:
+    - product: FDA digital therapeutic (QFT)
+      product_code: QFT
+      lapsed: false
+      latest_decision: '2024-06-14'
+      devices:
+      - EndeavorOTC
+      - EndeavorRx
+    signal_note: certified_products = one entry per FDA product code held, never per device; openFDA carries decisions,
+      not withdrawals, so lapsed is always false
+  detected_by: sweep-digital-therapeutics.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://diga.bfarm.de/de/verzeichnis
+- https://mhealthbelgium.be/apps
+- https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
+checked:
+- https://api.fda.gov/device/510k.json?search=product_code:PWE+product_code:QFT+product_code:QMY+product_code:QMZ+product_code:QQU+product_code:QRA+product_code:QVO+product_code:QWI+product_code:QXC+product_code:SAP+product_code:SBN+product_code:SCP+product_code:SEE&limit=100
+- https://diga.bfarm.de/de/verzeichnis
+- https://mhealthbelgium.be/apps
